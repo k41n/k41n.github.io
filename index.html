@@ -1,0 +1,70 @@
+<html>
+<head>
+  <link rel='stylesheet' href='survey.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="survey.js"></script>
+</head>
+<body>
+  <form name='survey' id='survey'>
+    <p>
+      <label for='industry'>Select your industry</label>
+      <select name='industry'>
+        <option>Brands</option>
+        <option>Agencies</option>
+        <option>Travel, tourism & Leisure/sport</option>
+        <option>Media & publishing</option>
+        <option>Retail (offline)</option>
+        <option>E-commerce/ hobbies</option>
+        <option>Hospitality venues (restaurant and bars)</option>
+        <option>Entertainment (bands, film and venues)</option>
+        <option>Education</option>
+        <option>Others</option>
+      </select>
+    </p>
+    <p>
+      <label for='turnover'>What size estimated turnover of your company?</label>
+      <select name='turnover' id='turnover'>
+        <option value='1'>Under $500,000</option>
+        <option value='2'>$500,000 to $2.5M</option>
+        <option value='3'>2,5M to $10M</option>
+        <option value='4'>$10M plus</option>
+      </select>
+    </p>
+    <p>
+      <label for='dedicated'>Do you have a dedicated marketing resource?</label>
+      <label for='dedicated'>Yes</label>
+      <input type='radio' name='dedicated' value='1'>
+      <label for='dedicated'>No</label>
+      <input type='radio' name='dedicated' value='2'>
+    </p>
+    <p>
+      <label for='looking_for'>What are you looking for (tick all that apply)</label><br/>
+      <input type='checkbox' id='promo' name='looking_for' value='1'><label>Promotions (contests, sweepstakes, instant rewards, email database)</label><br/>
+      <input type='checkbox' id='sochub' name='looking_for' value='2'><label>Social Hub (aggregate content from many channels)</label><br/>
+      <input type='checkbox' id='soccom' name='looking_for' value='3'><label>Social Commerce (Use customer content to increase conversions)</label><br/>
+    </p>
+    <p>
+      <label for='email'>Your Email address</label>
+      <input type='text' name='email'/>
+    </p>
+    <input type='submit' value='Submit'>
+  </form>
+  <div class='result'>
+    <div id='option1'>
+      Its possible that Shuttlerock is not suited to your business, if in doubt give us a call.
+    </div>
+    <div id='option2'>
+      Sorry we were not able to determine whether we would fit your business, please call us.
+    </div>
+    <div id='option3'>
+      It’s a good fit – we suggest you look at our Promotional functions.
+    </div>
+    <div id='option4'>
+      A very good fit – we suggest you look at our content aggregation functions
+    </div>
+    <div id='option5'>
+      An excellent fit – we think you’d be suited to our social commerce functionality.
+    </div>
+  </div>
+</body>
+</html>
